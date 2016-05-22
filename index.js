@@ -3,10 +3,9 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const morgan = require('morgan');
 const routes = require('./routes');
-require('dotenv').load();
 
 const app = express();
-app.set('port', (process.env.PORT || 8080));
+app.set('port', (process.env.PORT || 8081));
 
 app.use(bodyParser.json());
 app.use(cors());
